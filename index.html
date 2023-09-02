@@ -8,26 +8,52 @@
     <link rel="stylesheet" href="css/pagelayout.css" />
     <link rel="stylesheet" href="css/navigation.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/mediabreakpoints.css" />
+    <script src="javascript/navbar.js" defer></script>
   </head>
   <body>
     <nav class="top__nav">
       <div class="content">
-        <div class="logo demo__mode">Logo</div>
-        <ul class="horizontal demo__mode">Fixed Menu</ul>
-        <div class="hamburger demo__mode">Burger</div>
+        <a href="#" class="logo" id="top__nav__logo">Logo</a>
+        <ul class="horizontal">
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+        </ul>
+      </div>
+      <div class="dropdown-container">
+        <div class="hamburger" id="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="dropdown" id="dropdown-menu">
+          <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
+
     <main>
       <aside class="left__sidebar">
-        <nav class="left__nav demo__mode">Sticky Sidebar Nav</nav>
+        <nav class="left__nav">
+          <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+          </ul>
+        </nav>
       </aside>
       <article class="demo__mode">
-        <div class="container">Main Content</div>
+        <div class="container"></div>
       </article>
-      <aside class="right__sidebar demo__mode">Right Sidebar</aside>
+      <aside class="right__sidebar"></aside>
     </main>
     <footer>
-      <div class="wrapper demo__mode">Footer</div>
+      <div class="wrapper"></div>
     </footer>
   </body>
 </html>
